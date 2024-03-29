@@ -8,4 +8,7 @@ export default defineConfig({
     clean: true,
     dts: true,
     minify: false,
+    // external: [],
+    // noExternal: [/(.*)/], // 将依赖打包到一个文件中
+    // bundle: true,
 })
