@@ -24,7 +24,7 @@
     "lint": "cross-env NODE_ENV=production eslint src --fix --ext .ts,.js,.cjs,.mjs",
     "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production tsup",
-    "dev": "cross-env NODE_ENV=development ts-node-dev src/index.ts",
+    "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
     "dev:tsup": "cross-env NODE_ENV=development tsup --watch",
     "start": "node ./dist/index",
     "release": "semantic-release",
@@ -54,9 +54,8 @@
     "lint-staged": "^15.2.2",
     "rimraf": "^5.0.5",
     "semantic-release": "^23.0.6",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
     "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.4.3"
   },
   "config": {
