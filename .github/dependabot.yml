@@ -9,3 +9,6 @@ updates:
       timezone: Asia/Shanghai
     ignore:
       - dependency-name: semantic-release
+      - dependency-name: "@commitlint/config-conventional"
+        versions:
+          - ">= 19.0.0"
