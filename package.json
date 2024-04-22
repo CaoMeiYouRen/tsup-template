@@ -38,7 +38,7 @@
     "@types/debug": "^4.1.12",
     "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
-    "@typescript-eslint/parser": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.1",
     "commitizen": "^4.3.0",
     "conventional-changelog-cli": "^4.1.0",
     "conventional-changelog-cmyr-config": "^2.1.2",
