@@ -3,6 +3,31 @@ import { defineConfig } from 'tsup'
 export default defineConfig({
     entry: ['src/index.ts'],
     format: ['cjs', 'esm'],
+    outExtension({ format }) {
+        switch (format) {
+            case 'cjs':
+                return {
+                    js: '.cjs',
+                    dts: '.d.ts',
+                }
+            case 'esm':
+                return {
+                    js: '.mjs',
+                    dts: '.d.ts',
+                }
+            case 'iife':
+                return {
+                    js: '.global.js',
+                    dts: '.d.ts',
+                }
+            default:
+                break
+        }
+        return {
+            js: '.js',
+            dts: '.d.ts',
+        }
+    },
     splitting: false, // 代码拆分
     sourcemap: true,
     clean: true,
