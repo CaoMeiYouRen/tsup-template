@@ -3,11 +3,12 @@ import { defineConfig } from 'tsup'
 export default defineConfig({
     entry: ['src/index.ts'],
     format: ['cjs', 'esm'],
-    splitting: false,
+    splitting: false, // 代码拆分
     sourcemap: true,
     clean: true,
     dts: true,
-    minify: false,
+    minify: false, // 缩小输出
+    shims: true, // 注入 cjs 和 esm 填充代码，解决 import.meta.url 和 __dirname 的兼容问题
     // external: [],
     // noExternal: [/(.*)/], // 将依赖打包到一个文件中
     // bundle: true,
