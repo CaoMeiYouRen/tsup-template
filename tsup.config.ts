@@ -1,6 +1,7 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
+    platform: 'node', // 目标平台
     entry: ['src/index.ts'],
     format: ['cjs', 'esm'],
     outExtension({ format }) {
