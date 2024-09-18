@@ -28,7 +28,7 @@
     "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
     "dev:tsup": "cross-env NODE_ENV=development tsup --watch",
     "start": "node ./dist/index",
-    "start:tsx": "cross-env NODE_ENV=development tsx src/index.ts",
+    "start:tsx": "cross-env NODE_ENV=production tsx src/index.ts",
     "release": "semantic-release",
     "commit": "cz",
     "prepare": "husky install"
