@@ -96,7 +96,8 @@
       "esbuild": "^0.25.0",
       "@octokit/plugin-paginate-rest": "^11.4.1",
       "@octokit/request": "^9.2.1",
-      "@octokit/request-error": "^5.1.1"
+      "@octokit/request-error": "^5.1.1",
+      "tmp": "^0.2.4"
     }
   }
 }
