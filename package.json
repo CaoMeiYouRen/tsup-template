@@ -99,7 +99,11 @@
       "@octokit/request": "^9.2.1",
       "@octokit/request-error": "^5.1.1",
       "tmp": "^0.2.4",
-      "@conventional-changelog/git-client": "^2.0.0"
-    }
+      "@conventional-changelog/git-client": "^2.0.0",
+      "js-yaml": "^4.1.1"
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
